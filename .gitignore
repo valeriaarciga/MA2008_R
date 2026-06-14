@@ -1,0 +1,18 @@
+# Datos
+Ejemplo.csv
+output_planograma.csv
+output_planograma_BCO.csv
+output_planograma_CLA.csv
+output_planograma_HOG.csv
+output_planograma_HRN.csv
+output_planograma_OFC.csv
+output_planograma_PTC.csv
+output_planograma_REC.csv
+output_planograma_RET.csv
+output_planograma_SIN.csv
+output_planograma_todos.csv
+
+# Entornos / cachés 
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
