@@ -1,4 +1,5 @@
 # Datos
+*.csv
 Ejemplo.csv
 output_planograma.csv
 output_planograma_BCO.csv
