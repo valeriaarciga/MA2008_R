@@ -11,6 +11,24 @@ output_planograma_REC.csv
 output_planograma_RET.csv
 output_planograma_SIN.csv
 output_planograma_todos.csv
+output_planograma_BCO_DI.csv
+output_planograma_BCO_IZ.csv
+output_planograma_CLA_DI.csv
+output_planograma_CLA_IZ.csv
+output_planograma_HOG_DI.csv
+output_planograma_HOG_IZ.csv
+output_planograma_HRN_DI.csv
+output_planograma_HRN_IZ.csv
+output_planograma_OFC_DI.csv
+output_planograma_OFC_IZ.csv
+output_planograma_PTC_DI.csv
+output_planograma_PTC_IZ.csv
+output_planograma_REC_DI.csv
+output_planograma_REC_IZ.csv
+output_planograma_RET_DI.csv
+output_planograma_RET_IZ.csv
+output_planograma_SIN_DI.csv
+output_planograma_SIN_IZ.csv
 
 # Entornos / cachés 
 __pycache__/
