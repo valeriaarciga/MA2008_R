@@ -12,6 +12,10 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 from pathlib import Path
+import base64
+import io
+from PIL import Image, ImageDraw, ImageFont
+from image_manager import get_product_image_pil
 
 # ── Configuración de página ──────────────────────────────────────────────────
 st.set_page_config(
@@ -168,10 +172,11 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # ── Tabs ─────────────────────────────────────────────────────────────────────
-tab1, tab2, tab3 = st.tabs([
+tab1, tab2, tab3, tab4 = st.tabs([
     "📊  Resultados Generales",
     "🔍  Explorador de Datos",
     "🎛️  Simulador de Escenarios",
+    "🗂️  Glosario de Productos",
 ])
 
 # ╔══════════════════════════════════════════════════════════════════════════╗
@@ -400,7 +405,7 @@ with tab2:
             st.plotly_chart(fig_top, use_container_width=True)
 
         # ── Visualizador de charola ──
-        st.markdown('<div class="section-title">Visualizador de Charola (planograma)</div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-title">Visualizador de Charola con Imágenes de Producto</div>', unsafe_allow_html=True)
 
         col_p1, col_p2, col_p3 = st.columns(3)
         with col_p1:
@@ -419,78 +424,145 @@ with tab2:
 
         if not df_vis.empty:
             charolas_ids = sorted(df_vis["CHAROLA_ID"].unique())
+            n_charolas   = len(charolas_ids)
 
-            # paleta de colores para planogrupos
-            pgs = df_vis["PLANOGRUPO_DESC"].unique()
-            colors_pg = {}
-            palette = [ROJO, AMARILLO, "#FF6B6B", "#FFD700", "#CC0009",
-                       "#FFC300", "#FF4B55", "#B8860B", "#DC143C", "#DAA520"]
-            for i, pg in enumerate(pgs):
-                colors_pg[pg] = palette[i % len(palette)]
+            # ── Parámetros del canvas PIL ────────────────────────────────────
+            PX_PER_CM  = 9
+            SHELF_H_PX = 120
+            SHELF_GAP  = 14
+            LABEL_W    = 52
+            CANVAS_W   = LABEL_W + int(120.0 * PX_PER_CM) + 10
+            CANVAS_H   = n_charolas * (SHELF_H_PX + SHELF_GAP) + SHELF_GAP
 
+            canvas = Image.new("RGB", (CANVAS_W, CANVAS_H), "#F5F5F5")
+            draw   = ImageDraw.Draw(canvas)
+
+            try:
+                fnt_lbl = ImageFont.truetype("/System/Library/Fonts/Helvetica.ttc", 13)
+            except Exception:
+                fnt_lbl = ImageFont.load_default()
+
+            def _h2rgb(h):
+                h = h.lstrip('#')
+                return tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
+
+            ROJO_RGB = _h2rgb(ROJO)
+
+            # Mapa de posiciones para el hover de Plotly
+            # (en unidades de cm para el eje X y número de charola para Y)
+            hover_x, hover_y, hover_text = [], [], []
+
+            with st.spinner("Generando imágenes de productos…"):
+                for row_i, ch_id in enumerate(charolas_ids):
+                    df_ch = df_vis[df_vis["CHAROLA_ID"] == ch_id]
+                    y_top = SHELF_GAP + row_i * (SHELF_H_PX + SHELF_GAP)
+                    y_bot = y_top + SHELF_H_PX
+
+                    # Fondo de charola
+                    draw.rectangle([LABEL_W, y_top, CANVAS_W - 4, y_bot],
+                                   fill="#ECECEC", outline="#C0C0C0", width=1)
+                    # Borde rojo inferior
+                    draw.rectangle([LABEL_W, y_bot - 5, CANVAS_W - 4, y_bot],
+                                   fill=ROJO_RGB)
+                    # Etiqueta Ch.N
+                    draw.text((4, y_top + SHELF_H_PX // 2 - 8),
+                              f"Ch.{ch_id}", font=fnt_lbl, fill=ROJO_RGB)
+
+                    for _, prod in df_ch.iterrows():
+                        x_cm    = float(prod["COORDENADA_X_INICIO"])
+                        n_frt   = max(1, int(prod["NUM_FRENTES"]))
+                        ancho_1 = float(prod["ANCHO_DIBUJO_CM"]) / n_frt
+                        upc     = str(prod["UPC_CVE"])
+                        desc    = str(prod["ITEM_DESC"])
+                        pg      = str(prod["PLANOGRUPO_DESC"])
+                        px_h    = SHELF_H_PX - 10
+                        px_w1   = max(4, int(ancho_1 * PX_PER_CM) - 1)
+
+                        try:
+                            prod_img = get_product_image_pil(upc, desc, ancho_1, px_h / PX_PER_CM)
+                            prod_img = prod_img.resize((px_w1, px_h), Image.LANCZOS)
+                        except Exception:
+                            prod_img = None
+
+                        for frente in range(n_frt):
+                            px_x = LABEL_W + int((x_cm + frente * ancho_1) * PX_PER_CM)
+                            if prod_img is not None:
+                                canvas.paste(prod_img, (px_x, y_top + 5),
+                                             prod_img if prod_img.mode == "RGBA" else None)
+                            else:
+                                draw.rectangle([px_x, y_top + 5,
+                                                px_x + px_w1, y_top + 5 + px_h],
+                                               fill=ROJO_RGB, outline="#FFF", width=1)
+
+                            # Coordenadas para hover (en espacio Plotly: x=cm, y=charola invertida)
+                            hover_x.append(x_cm + (frente + 0.5) * ancho_1)
+                            hover_y.append(n_charolas - row_i - 0.5)
+                            hover_text.append(
+                                f"<b>{desc}</b><br>"
+                                f"Planogrupo: {pg}<br>"
+                                f"Frentes: {n_frt}  ·  Charola {ch_id}<br>"
+                                f"UPC: {upc}<br>"
+                                f"Posición X: {x_cm:.1f} cm"
+                            )
+
+            # ── Convertir canvas PIL a base64 ────────────────────────────────
+            buf_canvas = io.BytesIO()
+            canvas.save(buf_canvas, format="PNG")
+            canvas_b64 = "data:image/png;base64," + base64.b64encode(
+                buf_canvas.getvalue()).decode()
+
+            # ── Figura Plotly: imagen PIL de fondo + scatter invisible para hover
             fig_shelf = go.Figure()
-            n_charolas = len(charolas_ids)
-            height_cm  = 20   # altura visual por charola
 
-            for row_i, ch_id in enumerate(charolas_ids):
-                df_ch = df_vis[df_vis["CHAROLA_ID"] == ch_id]
-                y_base = (n_charolas - row_i - 1) * (height_cm + 5)
+            # Canvas PIL como imagen de fondo (paper coords)
+            fig_shelf.add_layout_image(dict(
+                source=canvas_b64,
+                x=0, y=1, xref="paper", yref="paper",
+                sizex=1, sizey=1,
+                xanchor="left", yanchor="top",
+                layer="below",
+            ))
 
-                # Fondo de la charola
-                fig_shelf.add_shape(
-                    type="rect",
-                    x0=0, x1=120, y0=y_base, y1=y_base + height_cm,
-                    fillcolor="#F0F0F0", line=dict(color="#CCC", width=1),
-                )
+            # Scatter invisible para tooltips (coordenadas normalizadas)
+            # Mapeamos: x_cm -> fracción horizontal, charola -> fracción vertical
+            norm_x = [v / 120.0 for v in hover_x]
+            norm_y = [1.0 - (v / n_charolas) for v in hover_y]
 
-                for _, prod in df_ch.iterrows():
-                    x0 = prod["COORDENADA_X_INICIO"]
-                    x1 = x0 + prod["ANCHO_DIBUJO_CM"]
-                    color_fill = colors_pg.get(prod["PLANOGRUPO_DESC"], ROJO)
-                    fig_shelf.add_shape(
-                        type="rect",
-                        x0=x0, x1=x1, y0=y_base + 1, y1=y_base + height_cm - 1,
-                        fillcolor=color_fill, opacity=0.85,
-                        line=dict(color=BLANCO, width=1),
-                    )
-                    # Etiqueta del producto si hay espacio
-                    if prod["ANCHO_DIBUJO_CM"] >= 8:
-                        desc = str(prod["ITEM_DESC"])[:18]
-                        fig_shelf.add_annotation(
-                            x=(x0 + x1) / 2, y=y_base + height_cm / 2,
-                            text=desc, showarrow=False,
-                            font=dict(size=7, color=BLANCO if color_fill != AMARILLO else GRIS),
-                            xanchor="center", yanchor="middle",
-                            textangle=-90 if prod["ANCHO_DIBUJO_CM"] < 14 else 0,
-                        )
-
-                # Etiqueta de charola
-                fig_shelf.add_annotation(
-                    x=-3, y=y_base + height_cm / 2,
-                    text=f"Ch.{ch_id}", showarrow=False,
-                    font=dict(size=10, color=GRIS), xanchor="right",
-                )
+            fig_shelf.add_trace(go.Scatter(
+                x=norm_x, y=norm_y,
+                mode="markers",
+                marker=dict(size=int(SHELF_H_PX * PX_PER_CM / 120 * 8),
+                            color="rgba(0,0,0,0)", symbol="square"),
+                hovertemplate="%{customdata}<extra></extra>",
+                customdata=hover_text,
+                showlegend=False,
+            ))
 
             fig_shelf.update_layout(
-                height=max(300, n_charolas * 55),
-                paper_bgcolor=BLANCO, plot_bgcolor=BLANCO,
-                margin=dict(l=50, r=20, t=20, b=20),
-                xaxis=dict(range=[-5, 125], title="Ancho (cm)",
-                           showgrid=True, gridcolor="#EEE"),
-                yaxis=dict(visible=False),
-                title=dict(text=f"Planograma: {seg_v} / {dir_v} / Tamaño {tam_v}",
-                           font=dict(color=ROJO, size=14)),
+                height=CANVAS_H,
+                paper_bgcolor=BLANCO, plot_bgcolor="rgba(0,0,0,0)",
+                margin=dict(l=0, r=0, t=30, b=0),
+                xaxis=dict(range=[0, 1], visible=False, fixedrange=True),
+                yaxis=dict(range=[0, 1], visible=False, fixedrange=True),
+                title=dict(
+                    text=f"Planograma: <b>{seg_v}</b> / {dir_v} / Tamaño {tam_v} "
+                         f"— {n_charolas} charola{'s' if n_charolas!=1 else ''}",
+                    font=dict(color=ROJO, size=14)),
+                hoverlabel=dict(bgcolor=GRIS, font_color=BLANCO,
+                                font_size=13, bordercolor=AMARILLO),
+                dragmode=False,
             )
+            st.plotly_chart(fig_shelf, use_container_width=True,
+                            config={"displayModeBar": False})
 
-            # Leyenda de planogrupos
-            for pg, col_ in colors_pg.items():
-                fig_shelf.add_trace(go.Scatter(
-                    x=[None], y=[None], mode="markers",
-                    marker=dict(size=12, color=col_, symbol="square"),
-                    name=pg, showlegend=True,
-                ))
-
-            st.plotly_chart(fig_shelf, use_container_width=True)
+            pgs_list   = df_vis["PLANOGRUPO_DESC"].dropna().unique()
+            pal_colors = [ROJO, "#FF6B6B", "#CC0009", "#FF4B55", "#DC143C",
+                          "#B8860B", "#DAA520", AMARILLO, "#FFD700", "#FFC300"]
+            badges = " ".join(
+                f'<span class="badge" style="background:{pal_colors[i % len(pal_colors)]}">{pg}</span>'
+                for i, pg in enumerate(sorted(pgs_list))
+            )
+            st.markdown(f"**Planogrupos:** {badges}", unsafe_allow_html=True)
 
         # ── Tabla de datos ──
         st.markdown('<div class="section-title">Tabla de datos filtrada</div>', unsafe_allow_html=True)
@@ -713,3 +785,68 @@ with tab3:
               <div class="kpi-delta">suma de todos los segmentos</div>
             </div>
             """, unsafe_allow_html=True)
+
+# ╔══════════════════════════════════════════════════════════════════════════╗
+# ║  TAB 4 — GLOSARIO DE PRODUCTOS                                          ║
+# ╚══════════════════════════════════════════════════════════════════════════╝
+with tab4:
+    st.markdown('<div class="section-title">Glosario visual de productos</div>', unsafe_allow_html=True)
+    st.markdown("Catálogo de todos los SKUs únicos con su imagen sintética, planogrupo y datos clave.")
+
+    # Filtros del glosario
+    col_g1, col_g2, col_g3 = st.columns(3)
+    with col_g1:
+        glos_pg  = st.multiselect("Filtrar por Planogrupo", sorted(df_raw["PLANOGRUPO_DESC"].dropna().unique()), key="glos_pg")
+    with col_g2:
+        glos_seg = st.multiselect("Filtrar por Segmento",   sorted(df_raw["SEGMENTO_ID"].dropna().unique()),    key="glos_seg")
+    with col_g3:
+        glos_q   = st.text_input("Buscar por nombre", placeholder="ej. Coca-Cola, Pepsi…", key="glos_q")
+
+    df_cat = (
+        df_raw.groupby("UPC_CVE")
+        .agg(ITEM_DESC=("ITEM_DESC","first"), PLANOGRUPO_DESC=("PLANOGRUPO_DESC","first"),
+             SEGMENTO_ID=("SEGMENTO_ID","first"), NUM_FRENTES=("NUM_FRENTES","sum"))
+        .reset_index()
+    )
+    if glos_pg:
+        df_cat = df_cat[df_cat["PLANOGRUPO_DESC"].isin(glos_pg)]
+    if glos_seg:
+        df_cat = df_cat[df_cat["SEGMENTO_ID"].isin(glos_seg)]
+    if glos_q.strip():
+        df_cat = df_cat[df_cat["ITEM_DESC"].str.contains(glos_q.strip(), case=False, na=False)]
+
+    df_cat = df_cat.head(120).reset_index(drop=True)
+    st.markdown(f"<small>Mostrando <b>{len(df_cat)}</b> productos</small>", unsafe_allow_html=True)
+
+    COLS = 6
+    with st.spinner("Generando imágenes del glosario…"):
+        for row_start in range(0, len(df_cat), COLS):
+            cols = st.columns(COLS)
+            for col_i, col in enumerate(cols):
+                idx = row_start + col_i
+                if idx >= len(df_cat):
+                    break
+                prod = df_cat.iloc[idx]
+                upc  = str(prod["UPC_CVE"])
+                desc = str(prod["ITEM_DESC"])
+                pg   = str(prod["PLANOGRUPO_DESC"])
+                with col:
+                    try:
+                        pil_img = get_product_image_pil(upc, desc, 8, 20)
+                        pil_img = pil_img.resize((120, 160), Image.LANCZOS)
+                        buf_g = io.BytesIO()
+                        pil_img.save(buf_g, format="PNG")
+                        buf_g.seek(0)
+                        st.image(buf_g, use_container_width=True)
+                    except Exception:
+                        st.markdown("—")
+                    st.markdown(
+                        f"<div style='font-size:0.72rem;line-height:1.3;text-align:center;"
+                        f"color:{GRIS};margin-top:2px'>"
+                        f"<b>{desc[:40]}</b><br>"
+                        f"<span style='color:{ROJO}'>{pg}</span><br>"
+                        f"<span style='color:#888'>UPC: {upc[:13]}</span>"
+                        f"</div>",
+                        unsafe_allow_html=True,
+                    )
+            st.markdown("")   # separación entre filas
