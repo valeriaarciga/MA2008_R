@@ -1,0 +1,389 @@
+SEGMENTO_ID,MUEBLE_ID,DIRECCION,CHAROLA_ID,UPC_CVE,ITEM_DESC,PLANOGRUPO_DESC,COORDENADA_X_INICIO,ANCHO_DIBUJO_CM
+RET,CF,DI,1,75004699,Refresco CocaCola 500 ml botella vidrio Retornable,Refrescos,0.0,26.4
+RET,CF,DI,1,7501022015698,Mirinda RA 2 Lts Pet 0CAL,Refrescos,26.4,23.6
+RET,CF,DI,1,7501055304745,Refresco CocaCola 3 lt botella No Retornable cola,Refrescos,50.0,22.6
+RET,CF,DI,1,7501055305247,Refresco CocaCola 2.5 lt botella No Retornable cola,Refrescos,72.6,21.8
+RET,CF,DI,1,7501073800908,Penafiel Mineral 2 lt NR,Refrescos,94.4,20.6
+RET,CF,DI,2,75007614,Refresco CocaCola 600 ml botella No Retornable cola,Refrescos,0.0,20.7
+RET,CF,DI,2,7501055302925,Refresco CocaCola 2 lt botella No Retornable cola,Refrescos,20.7,20.0
+RET,CF,DI,2,7501055313532,Refresco Coca Cola 1.75L NR,Refrescos,40.7,19.0
+RET,CF,DI,2,7501055361168,A Mineralizada 600ml 12P,Refrescos,59.7,18.9
+RET,CF,DI,2,7501055361540,CocaCola Original lata 355 ML NR Sleek Can,Refrescos,78.6,17.4
+RET,CF,DI,2,7501055320646,Coca Cola SA 1 L NR,Refrescos,96.0,17.0
+RET,CF,DI,3,7501055313525,Refresco Coca Cola 1.25 lts No Retornable:Regular,Refrescos,0.0,17.0
+RET,CF,DI,3,7501055302451,Refresco CocaCola 1 lt botella No Retornable cola,Refrescos,17.0,16.8
+RET,CF,DI,3,21136010541,Agua mineral Topo Chico 600 ml botella No Retornable,Refrescos,33.8,15.6
+RET,CF,DI,3,75005771,Refresco CocaCola 355 ml botella Retornable,Refrescos,49.4,12.4
+RET,CF,DI,3,7501055305261,Refresco CocaCola 500 ml botella No Retornable cola light,Refrescos,61.8,14.0
+RET,CF,DI,3,7501055302086,Refresco CocaCola 500 ml botella vidrio No Retornable cola,Refrescos,75.8,13.8
+RET,CF,DI,3,7501055305339,Refresco CocaCola 600 ml botella No Retornable cola light,Refrescos,89.6,13.8
+RET,CF,DI,3,7501055355310,Coca Cola 250 ml PET NR,Refrescos,103.4,11.2
+RET,CF,DI,4,7501055320639,Coca Cola SA 600 ml NR,Refrescos,0.0,13.8
+RET,CF,DI,4,7501055347179,Yoli Limon 500ml Vidrio Ret,Refrescos,13.8,13.3
+RET,CF,DI,4,7501055300075,Refresco CocaCola 355 ml lata,Refrescos,27.1,13.2
+RET,CF,DI,4,7501055313594,Refresco Coca-Cola 473 ml lata:Cola:regular,Refrescos,40.3,13.2
+RET,CF,DI,4,7501055310968,Refresco Coca-Cola No Retornable 450 ml botella:regular,Refrescos,53.5,13.0
+RET,CF,DI,4,7501055332175,Coca Cola Regular Chubby 355ml Pet,Refrescos,66.5,13.0
+RET,CF,DI,4,7501073830509,Penafiel Mineral 600 ml NR,Refrescos,79.5,12.8
+RET,CF,DI,4,7501055310876,Refresco Coca Cola Light 3Lts NR,Refrescos,92.3,12.5
+RET,CF,DI,4,7501055336630,Escuis Manzana 3L NR,Refrescos,104.8,11.2
+RET,CF,DI,5,7501055310586,Fanta Fresa 3L NR,Refrescos,0.0,12.5
+RET,CF,DI,5,7501055329465,REFRESCO COCACOLA ZERO 3 LT BOTELLA NR,Refrescos,12.5,12.5
+RET,CF,DI,5,7501055335060,Coca Cola 2.75lts,Refrescos,25.0,12.5
+RET,CF,DI,5,7501055339396,Joya Manzana 3L NR,Refrescos,37.5,12.5
+RET,CF,DI,5,7501055339402,Joya Ponche 3L NR,Refrescos,50.0,12.5
+RET,CF,DI,5,7501031310098,Refresco Pepsi 3 lt botella No Retornable:cola,Refrescos,62.5,12.5
+RET,CF,DI,5,7501055307043,Refresco Coca-Cola 4 pack 600 ml:regular,Refrescos,75.0,14.0
+RET,CF,DI,5,7501055313068,Coca Cola 3L Ret,Refrescos,89.0,12.0
+RET,CF,DI,5,793573950079,Red Cola 3Lt NR,Refrescos,101.0,12.0
+RET,CF,DI,6,7501071120305,Squirt Toronja 3L NR,Refrescos,0.0,11.8
+RET,CF,DI,6,7501055339419,Escuis Pina 3L NR,Refrescos,11.8,11.7
+RET,CF,DI,6,7501022014646,Seven up Lima limon 3L NR,Refrescos,23.5,11.5
+RET,CF,DI,6,7501055314171,Joya Ponche 2.5L NR,Refrescos,35.0,11.5
+RET,CF,DI,6,7501055312146,Fanta Fresa 2.5L NR,Refrescos,46.5,11.5
+RET,CF,DI,6,7501479300088,Manzanita Deliciosa Original 3L NR,Refrescos,58.0,11.5
+RET,CF,DI,6,7501055305421,Refresco CocaCola 25 lt botella No Retornable light,Refrescos,69.5,11.5
+RET,CF,DI,6,7501055343287,Sidral Mundet Manzana 2.5L NR,Refrescos,81.0,11.5
+RET,CF,DI,6,7501055311828,Sprite Lima limon 2.5L NR,Refrescos,92.5,11.5
+RET,CF,DI,6,7501055368570,COCA COLA ORIGINAL 2.5LT RET,Refrescos,104.0,11.5
+RET,CF,DI,7,7501055310227,Refresco Coca-Cola 2.5 lt botella retornable cola,Refrescos,0.0,11.5
+RET,CF,DI,7,7501055311811,Fanta Naranja 2.5L NR,Refrescos,11.5,11.5
+RET,CF,DI,7,7501055311804,Fresca Toronja 2.5L NR,Refrescos,23.0,11.5
+RET,CF,DI,7,7501055314218,Joya Manzana 2.5L NR,Refrescos,34.5,11.5
+RET,CF,DI,7,7501055356492,Cristal Negra 2.5L NRP,Refrescos,46.0,11.3
+RET,CF,DI,7,7501055356515,Cristal Fresa 2.5L NRP,Refrescos,57.3,11.3
+RET,CF,DI,7,7501055304790,Fanta Naranja 3L NR,Refrescos,68.6,11.2
+RET,CF,DI,7,7501055340422,Sidral Mundet Manzana 3L NR,Refrescos,79.8,11.2
+RET,CF,DI,7,7501055304806,Sprite Lima limon 3L NR,Refrescos,91.0,11.2
+RET,CF,DI,7,7501055304813,Fresca Toronja 3L NR,Refrescos,102.2,11.2
+RET,CF,DI,8,7501022015551,Manzanita Sol Manzana 2.5L NR,Refrescos,0.0,11.2
+RET,CF,DI,8,7501441615110,Jarritos Mandarina 3L NR,Refrescos,11.2,11.5
+RET,CF,DI,8,7501055357895,Sidral Mundet Manzana 300ml NR,Refrescos,22.7,11.2
+RET,CF,DI,8,7501031305629,Refresco Pepsi Regular 2.5L Retornable,Refrescos,33.9,11.1
+RET,CF,DI,8,7501031310258,Refresco Pepsi 2.5 lt botella No Retornable:cola,Refrescos,45.0,11.0
+RET,CF,DI,8,7501031312771,Refresco Pepsi 2.5 lt botella No Retornable:cola:light,Refrescos,56.0,11.0
+RET,CF,DI,8,7501505630080,Sangria casera Original 2.5L NR,Refrescos,67.0,11.0
+RET,CF,DI,8,7501071120411,Squirt Toronja 2.5L NR,Refrescos,78.0,11.0
+RET,CF,DI,8,7501022014639,Seven up Lima limon 2.5L NR,Refrescos,89.0,11.0
+RET,CF,DI,8,744886195466,Aga Manzana 2.5L NR,Refrescos,100.0,11.0
+RET,CF,DI,9,7501055321919,Agua ciel gasificada Sifon 1.75 Lt botella NR,Refrescos,0.0,10.8
+RET,CF,DI,9,7501055354672,Coca-Cola 235ml VNR,Refrescos,10.8,10.6
+RET,CF,DI,9,7501277412617,Agua purificada Taxco 2 lt bote,Refrescos,21.4,10.5
+RET,CF,DI,9,7501055357420,A Mineralizada 25L 6P,Refrescos,31.9,10.5
+RET,CF,DI,9,7501055379941,FRESCA FUSION 2L NR,Refrescos,42.4,10.5
+RET,CF,DI,9,7501055367412,Ameyal Pera 2L PNR 4pk,Refrescos,52.9,10.4
+RET,CF,DI,9,7501055329946,Yoli Limon 2L NR,Refrescos,63.3,10.4
+RET,CF,DI,9,7503006897030,Red Cola 2 Lts No Retornable,Refrescos,73.7,10.4
+RET,CF,DI,9,7501055379538,Del Valle Fizz Limonada 2L PNR,Refrescos,84.1,10.4
+RET,CF,DI,9,7501055379491,Del Valle Fizz Naranjada 2L PNR,Refrescos,94.5,10.4
+RET,CF,DI,10,7501055364077,AMEYAL MANDUR BOT 2L NR PET 4PK,Refrescos,0.0,10.4
+RET,CF,DI,10,7501055301300,Refresco CocaCola 2 lt botella Retornable,Refrescos,10.4,10.3
+RET,CF,DI,10,7501055301386,Fanta Fresa 2L NR,Refrescos,20.7,10.3
+RET,CF,DI,10,7501073839861,Penafiel Naranjada 2 lt NR,Refrescos,31.0,10.3
+RET,CF,DI,10,7501073831964,Penafiel Fresa 2L NR,Refrescos,41.3,10.3
+RET,CF,DI,10,7501073839892,Penafiel Limonada 2 lt NR,Refrescos,51.6,10.3
+RET,CF,DI,10,761746000319,California Manzana 2L NR,Refrescos,61.9,10.3
+RET,CF,DI,10,7501073831988,Penafiel Manzanita 2L NR,Refrescos,72.2,10.3
+RET,CF,DI,10,7501055320660,Coca Cola SA 2 L NR,Refrescos,82.5,10.3
+RET,CF,DI,10,7501073840843,Penafiel Sifon 1.75lt NR,Refrescos,92.8,10.3
+RET,CF,DI,11,7501073841949,PENAFIEL PINADA 2 LTS,Refrescos,0.0,10.3
+RET,CF,DI,11,7501198355444,Crush Naranja 2L NR,Refrescos,10.3,10.3
+RET,CF,DI,11,7501198354195,Dr Pepper Original 2L NR,Refrescos,20.6,10.3
+RET,CF,DI,11,7501022015544,Manzanita Sol Manzana 2L NR,Refrescos,30.9,10.2
+RET,CF,DI,11,7501055305742,Agua mineral Ciel 2 lt botella No Retornable,Refrescos,41.1,10.1
+RET,CF,DI,11,7501055359776,Mundet Sangria 2L NR,Refrescos,51.2,10.04
+RET,CF,DI,11,7501055340002,Sidral Mundet Manzana 2L NR,Refrescos,61.24,10.0
+RET,CF,DI,11,7501055349401,Refresco Coca Cola 235ml lata,Refrescos,71.24,10.0
+RET,CF,DI,11,7501055305650,Sprite Lima limon 2L NR,Refrescos,81.24,10.0
+RET,CF,DI,11,7501071120077,Squirt Toronja 2L NR,Refrescos,91.24,10.0
+RET,CF,DI,12,7503032676005,Squirt Toronja 2L NR,Refrescos,0.0,10.0
+RET,CF,DI,12,7501055305360,Refresco CocaCola 2 lt botella No Retornable cola light,Refrescos,10.0,10.0
+RET,CF,DI,12,7501198333565,Agua mineral Canada Dry Club Soda 2 lt botella No Retornable,Refrescos,20.0,10.0
+RET,CF,DI,12,7501022014622,Seven up Lima limon 2L NR,Refrescos,30.0,10.0
+RET,CF,DI,12,7501055303885,Fresca Toronja 2L NR,Refrescos,40.0,10.0
+RET,CF,DI,12,744886193059,Aga Sidra manzana 2L NR,Refrescos,50.0,10.0
+RET,CF,DI,12,7501505630028,Sangria casera Original 2L NR,Refrescos,60.0,10.0
+RET,CF,DI,12,7501055327973,Escuis Fresa 2L NR,Refrescos,70.0,10.0
+RET,CF,DI,12,7501371000734,Vita Fresa 2L NR,Refrescos,80.0,10.0
+RET,CF,DI,12,7501055321681,Coca Cola SA 2.5 L NR,Refrescos,90.0,10.0
+RET,CF,DI,13,7501055376681,AMEYAL FRESAKIWI BOT 2L NR PET 4PK,Refrescos,0.0,10.0
+RET,CF,DI,13,7501031311606,Refresco Pepsi 2 Lt botella No Retornable cola,Refrescos,10.0,10.0
+RET,CF,DI,13,7501031312405,Refresco Pepsi 2 lt botella No Retornable cola light,Refrescos,20.0,10.0
+RET,CF,DI,13,7501055328055,Escuis Manzana 2L NR,Refrescos,30.0,10.0
+RET,CF,DI,13,7501055302062,Sprite Lima limon 1.75L NR,Refrescos,40.0,9.95
+RET,CF,DI,13,7501055379934,FRESCA FUSION 1.75L NR,Refrescos,49.95,9.95
+RET,CF,DI,13,7501055311002,Fanta Naranja 1.75L NR,Refrescos,59.9,9.95
+RET,CF,DI,13,7501055374380,Cristal Cebada 1.75L NR,Refrescos,69.85,9.95
+RET,CF,DI,13,7501055349388,Mundet Manzana 1.75L NR,Refrescos,79.8,9.95
+RET,CF,DI,13,7501055374366,Cristal Fresa 1.75L NR,Refrescos,89.75,9.95
+RET,CF,DI,14,7501055374373,Cristal Sidra negra 1.75L NR,Refrescos,0.0,9.95
+RET,CF,DI,14,7501055301058,Fresca Toronja 1.75L NR,Refrescos,9.95,9.95
+RET,CF,DI,14,21136010480,Agua mineral Topo Chico 1.5 lt botella No Retornable,Refrescos,19.9,9.7
+RET,CF,DI,14,7501055382156,Del Valle Fizz Naranjada 1.75L NRP,Refrescos,29.6,9.6
+RET,CF,DI,14,7501055343270,Mundet Manzana 1.5L NR,Refrescos,39.2,9.5
+RET,CF,DI,14,7501055370009,COCA COLA LIGHT 1.75L,Refrescos,48.7,9.5
+RET,CF,DI,14,7501441604213,Jarritos Tamarindo 2L NR,Refrescos,58.2,9.5
+RET,CF,DI,14,7501441604411,Jarritos Tutti Frutti 2L NR,Refrescos,67.7,9.5
+RET,CF,DI,14,7501441606125,Jarritos Pi?a 1.5L NR,Refrescos,77.2,9.5
+RET,CF,DI,14,30385815005,Aguas de Lourdes Mineral 1.5 LTS,Refrescos,86.7,9.5
+RET,CF,DI,15,7501441604114,Jarritos Mandarina 2L NR,Refrescos,0.0,9.5
+RET,CF,DI,15,7501441604121,Jarritos Pi?a 2L NR,Refrescos,9.5,9.5
+RET,CF,DI,15,7501441606415,Jarritos 15Lt Tutti Fruti NR,Refrescos,19.0,9.5
+RET,CF,DI,15,7500326103421,Barrilitos Ponche 2L NR,Refrescos,28.5,9.5
+RET,CF,DI,15,7501055349555,Coca Cola Sin Azucar 1.75L,Refrescos,38.0,9.5
+RET,CF,DI,15,7503006897214,Jarritos Manzana 2L NR,Refrescos,47.5,9.5
+RET,CF,DI,15,7500326103407,Barrilitos Durazno 2L NR,Refrescos,57.0,9.5
+RET,CF,DI,15,7500326103438,Barrilitos Manzana 2L NR,Refrescos,66.5,9.5
+RET,CF,DI,15,7501055305643,Sprite Lima limon 1.5L NR,Refrescos,76.0,9.5
+RET,CF,DI,15,7501055300594,Refresco Coca-Cola 1.5 lt botella Retornable:cola:regular,Refrescos,85.5,9.5
+RET,CF,DI,16,7501055303830,Fresca Toronja 1.5L NR,Refrescos,0.0,9.5
+RET,CF,DI,16,7501055353217,JOYA 1.75L UVA,Refrescos,9.5,9.4
+RET,CF,DI,16,7501055370146,JOYA MANZANA 1.75L,Refrescos,18.9,9.4
+RET,CF,DI,16,7501055353163,JOYA DURAZNO 1.75L,Refrescos,28.3,9.4
+RET,CF,DI,16,7501055353170,JOYA FRESA 1.75L,Refrescos,37.7,9.4
+RET,CF,DI,16,7501371000857,Vita Fresa 1.5L NR,Refrescos,47.1,9.4
+RET,CF,DI,16,7501055328925,Victoria Manzana15lts,Refrescos,56.5,9.3
+RET,CF,DI,16,7501055388240,VICTORIA Manzana-Durazno 1.5L PNR,Refrescos,65.8,9.3
+RET,CF,DI,16,7501055368785,Refresco CocaCola 15 lt botella retornable cola,Refrescos,75.1,9.2
+RET,CF,DI,16,7501055303540,Refresco Coca-Cola 1.5 lt botella No Retornable:cola:regular,Refrescos,84.3,9.2
+RET,CF,DI,17,7501055300952,Refresco CocaCola 1 1/4 lt botella Retornable,Refrescos,0.0,9.1
+RET,CF,DI,17,606110023863,Red Cola 1.5 Lt,Refrescos,9.1,9.1
+RET,CF,DI,17,21136414646,Topo Chico Sangria 2L NR,Refrescos,18.2,9.0
+RET,CF,DI,17,7501055371754,Fanta Naranja 1.35L NR,Refrescos,27.2,9.0
+RET,CF,DI,17,7501071120176,Squirt Toronja 1.5L NR,Refrescos,36.2,9.0
+RET,CF,DI,17,7501022015384,Manzanita Sol PET 1.5 Lts,Refrescos,45.2,9.0
+RET,CF,DI,17,7501022015292,Refresco Mirinda 1.5 L NR: naranja,Refrescos,54.2,9.0
+RET,CF,DI,17,7501055371747,Fresca Toronja 1.35L NR,Refrescos,63.2,9.0
+RET,CF,DI,17,7501198355581,Dr Pepper Cream soda 600ml NR,Refrescos,72.2,8.9
+RET,CF,DI,17,7501055337729,Coca Cola Light 125L NRP,Refrescos,81.1,8.5
+RET,CF,DI,18,7501055326785,Coca Cola SA 125 L NR,Refrescos,0.0,8.5
+RET,CF,DI,18,744886375059,Refresco Jarritos 2Lt NR Mandarina,Refrescos,8.5,8.5
+RET,CF,DI,18,7501055305636,Sprite Lima limon 1L NR,Refrescos,17.0,8.5
+RET,CF,DI,18,7501055302840,Fanta Naranja 1L NR,Refrescos,25.5,8.5
+RET,CF,DI,18,7501055302819,Fresca Toronja 1L NR,Refrescos,34.0,8.5
+RET,CF,DI,18,7501277412389,Agua purificada Taxco 1 lt bote,Refrescos,42.5,8.4
+RET,CF,DI,18,7501055371730,Refresco Sprite 1.35 Lt,Refrescos,50.9,8.4
+RET,CF,DI,18,7501055371655,Coca-Cola 1.35 Lts,Refrescos,59.3,8.4
+RET,CF,DI,18,7501055305346,Refresco CocaCola 1 lt botella No Retornable cola light,Refrescos,67.7,8.4
+RET,CF,DI,18,7501055374755,Coca Cola sin Azucar 1.35 Lts,Refrescos,76.1,8.4
+RET,CF,DI,19,7501055371723,Sidral Mundet 1.35 Lt,Refrescos,0.0,8.4
+RET,CF,DI,19,7501031312672,Refresco sabor cola Pepsi 1lt NR Light,Refrescos,8.4,8.3
+RET,CF,DI,19,7501022013069,Pepsi Black 1.5lts,Refrescos,16.7,8.3
+RET,CF,DI,19,7501071120190,Squirt Toronja 1L NR,Refrescos,25.0,8.3
+RET,CF,DI,19,7501031311682,Refresco Pepsi 1.5 L NR:Regular,Refrescos,33.3,8.3
+RET,CF,DI,19,7501022008584,Refresco Pepsi Light 15L NR,Refrescos,41.6,8.3
+RET,CF,DI,19,7501073833739,Schwepes Ginger Ale 1Lt NR,Refrescos,49.9,8.3
+RET,CF,DI,19,7501022014080,Seven up Lima limon 1.5L NR,Refrescos,58.2,8.3
+RET,CF,DI,19,7503029481490,SANGRIA SE?ORIAL SIN AZUCAR 355ML,Refrescos,66.5,8.1
+RET,CF,DI,19,7501073841031,Penafiel Limonada 1lt NR,Refrescos,74.6,8.0
+RET,CF,DI,20,7501031311644,Refresco sabor cola Pepsi 1 lto botella no retornable:Regular,Refrescos,0.0,8.0
+RET,CF,DI,20,7501073841024,Penafiel Naranjada 1lt NR,Refrescos,8.0,8.0
+RET,CF,DI,20,7501073839212,Penafiel Twist Limon 1 lt NR,Refrescos,16.0,8.0
+RET,CF,DI,20,7501073830028,Penafiel Mineral 1 lt NR,Refrescos,24.0,8.0
+RET,CF,DI,20,7501022015858,7Up Citrus 600 Ml NR,Refrescos,32.0,7.8
+RET,CF,DI,20,21136110180,Topo Chico Twist Limon 600ml NR,Refrescos,39.8,7.6
+RET,CF,DI,20,21136016185,Topo Chico Twist Toronja 600ml NR NR,Refrescos,47.4,7.6
+RET,CF,DI,20,7501055301256,Refresco Coca Cola 710 ml botella no retornable:regular:cola,Refrescos,55.0,7.5
+RET,CF,DI,20,7500326103476,Barrilitos Manzana 750ml NR,Refrescos,62.5,7.2
+RET,CF,DI,20,7501055379521,DEL VALLE FIZZ 600ML LIMON,Refrescos,69.7,7.2
+RET,CF,DI,21,7500326103469,Barrilitos Ponche 750ml NR,Refrescos,0.0,7.2
+RET,CF,DI,21,7501055379484,DEL VALLE FIZZ 600ML NARANJA,Refrescos,7.2,7.2
+RET,CF,DI,21,7500326103452,Barrilitos Pi?a 750ml NR,Refrescos,14.4,7.2
+RET,CF,DI,21,7500326103445,Barrilitos Durazno 750ml NR,Refrescos,21.6,7.2
+RET,CF,DI,21,7501055305629,Sprite Lima limon 600ml NR,Refrescos,28.8,7.1
+RET,CF,DI,21,7501055305230,Fanta Fresa 600ml NR,Refrescos,35.9,7.1
+RET,CF,DI,21,7501055304653,Delaware Punch Uva 600ml NR,Refrescos,43.0,7.1
+RET,CF,DI,21,7501055303786,Fresca Toronja 600ml NR,Refrescos,50.1,7.1
+RET,CF,DI,21,7501055303779,Fanta Naranja 600ml NR,Refrescos,57.2,7.1
+RET,CF,DI,21,7501055366316,Sprite Lima limon SA 600ml NR,Refrescos,64.3,7.1
+RET,CF,DI,22,7501055386321,Cherry Coke 600ml PNR,Refrescos,0.0,7.1
+RET,CF,DI,22,7501055339983,Sidral Mundet Manzana 600ml NR,Refrescos,7.1,7.1
+RET,CF,DI,22,7501277412433,Agua purificada Taxco 600 ml bote,Refrescos,14.2,7.1
+RET,CF,DI,22,7501055376674,AMEYAL FREKIW BOT 600ML 6PK,Refrescos,21.3,7.1
+RET,CF,DI,22,7501055359769,Mundet Sangria 600ml NR,Refrescos,28.4,7.1
+RET,CF,DI,22,7501055327959,Escuis Fresa 600ml NR,Refrescos,35.5,7.1
+RET,CF,DI,22,7501055379927,FRESCA FUSION 600ML NR,Refrescos,42.6,7.1
+RET,CF,DI,22,7501055328031,Escuis Manzana 600ml NR,Refrescos,49.7,7.1
+RET,CF,DI,22,7501055308248,Agua mineral Ciel 600 ml botella No Retornable,Refrescos,56.8,7.1
+RET,CF,DI,22,7501055328154,Escuis Hierro 600ml NR,Refrescos,63.9,7.1
+RET,CF,DI,23,7501055329915,Yoli Limon 600ml NR,Refrescos,0.0,7.1
+RET,CF,DI,23,7501055328857,REFRESCO VICTORIA SABOR FRESA KIWI 600ML PET NR 6PK,Refrescos,7.1,7.1
+RET,CF,DI,23,7501055328826,Victoria Manzana 600ml NR,Refrescos,14.2,7.1
+RET,CF,DI,23,7501055328796,Victoria Grosella 600ml NR,Refrescos,21.3,7.1
+RET,CF,DI,23,7501055308330,Senzao Guarana 600ml NR,Refrescos,28.4,7.1
+RET,CF,DI,23,21136415476,Topo Chico Sangria light 600ml NR,Refrescos,35.5,7.0
+RET,CF,DI,23,7501055316670,Refresco Coca Cola 600 ml botella no retornable:light:Sin cafeina,Refrescos,42.5,7.0
+RET,CF,DI,23,7501055314096,Joya Ponche 600ml NR,Refrescos,49.5,7.0
+RET,CF,DI,23,7503001182025,ELITE FRESA 600 ML,Refrescos,56.5,7.0
+RET,CF,DI,23,7501379200044,Tonicol Vainilla 600ml NR,Refrescos,63.5,7.0
+RET,CF,DI,24,7501055314133,Joya Manzana 600ml NR,Refrescos,0.0,7.0
+RET,CF,DI,24,7501055314126,Joya Pina 600ml NR,Refrescos,7.0,7.0
+RET,CF,DI,24,7501055314119,Joya Durazno 600ml NR,Refrescos,14.0,7.0
+RET,CF,DI,24,7501055314102,Joya Uva 600ml NR,Refrescos,21.0,7.0
+RET,CF,DI,24,744886195237,Aga Sidra manzana 600ml NR,Refrescos,28.0,7.0
+RET,CF,DI,24,7500326103360,Se?orial Sangria 600ml NR,Refrescos,35.0,7.0
+RET,CF,DI,24,7501479300057,Manzanita Deliciosa Original 600ml NR,Refrescos,42.0,7.0
+RET,CF,DI,24,7501032408077,Cristal Fresa 600ml NR,Refrescos,49.0,7.0
+RET,CF,DI,24,7501505630073,Sangria casera Original 600ml NR,Refrescos,56.0,7.0
+RET,CF,DI,24,7501055302611,Fanta Uva 600ml NR,Refrescos,63.0,7.0
+RET,CF,DI,25,7501032408329,Cristal Sidra negra 600ml NR,Refrescos,0.0,7.0
+RET,CF,DI,25,7501032408336,Cristal Cebada 600ml NR,Refrescos,7.0,7.0
+RET,CF,DI,25,7501371000796,Vita Fresa 600 NR,Refrescos,14.0,7.0
+RET,CF,DI,25,792313000715,Zaraza Vargas Original 600ml NR,Refrescos,21.0,7.0
+RET,CF,DI,25,7501073845015,Schweppes Mineral 600ml,Refrescos,28.0,7.0
+RET,CF,DI,25,7503031899009,SOTO MANZANA 600 ML,Refrescos,35.0,7.0
+RET,CF,DI,25,7503014667007,Uvula Uva 500ml NR,Refrescos,42.0,7.0
+RET,CF,DI,25,7501198350432,Refresco Canada Dry 600 ml botella No Retornable ginger ale,Refrescos,49.0,7.0
+RET,CF,DI,25,21136414547,Refresco Topo Chico Sangria 600ml Botella NR,Refrescos,56.0,7.0
+RET,CF,DI,25,7503001182322,ELITE TORONJA 600 ML,Refrescos,63.0,7.0
+RET,CF,DI,26,7501198355451,Crush Naranja 600ml NR,Refrescos,0.0,7.0
+RET,CF,DI,26,7503007586001,Refresco Delison 355ml,Refrescos,7.0,7.0
+RET,CF,DI,26,7501055340040,Sidral Mundet Manzana light 600ml NR,Refrescos,14.0,7.0
+RET,CF,DI,26,7501055320684,Coca Cola SA 500 ml VNR,Refrescos,21.0,6.9
+RET,CF,DI,26,7501480700075,Tehuacan Brillante 600 ml,Refrescos,27.9,6.9
+RET,CF,DI,26,7501441610412,Jarritos Tutti Frutti 600ml NR,Refrescos,34.8,6.8
+RET,CF,DI,26,744886298822,Jarritos Mandarina 600ml NR,Refrescos,41.6,6.8
+RET,CF,DI,26,761746000302,California Manzana 600ml NR,Refrescos,48.4,6.8
+RET,CF,DI,26,7503018023953,Sangria Senorial SIN AZUCAR 600ml,Refrescos,55.2,6.8
+RET,CF,DI,26,7501022013052,PEPSI BLACK 600ML,Refrescos,62.0,6.8
+RET,CF,DI,27,7501441610122,Jarritos Pi?a 600ml NR,Refrescos,0.0,6.8
+RET,CF,DI,27,7501055371075,Sidral Mundet Manzana 500ml Vidrio Ret,Refrescos,6.8,6.72
+RET,CF,DI,27,7501073831902,Penafiel Fresa 600ml NR,Refrescos,13.52,6.7
+RET,CF,DI,27,7501073831926,Penafiel Manzana 600ml NR,Refrescos,20.22,6.7
+RET,CF,DI,27,792313000661,Jarochito Fresa 600ml NR,Refrescos,26.92,6.7
+RET,CF,DI,27,7501031312559,Refresco Pepsi 600 ml botella No Retornable cola light,Refrescos,33.62,6.7
+RET,CF,DI,27,7501022014585,Seven up Lima limon 600ml NR,Refrescos,40.32,6.7
+RET,CF,DI,27,7501031310012,Refresco Pepsi 600 ml botella No Retornable cola,Refrescos,47.02,6.7
+RET,CF,DI,27,7501022009277,Refresco Pepsi 473ml lata,Refrescos,53.72,6.7
+RET,CF,DI,27,7501073841925,Penafiel Pinada 600ml NR,Refrescos,60.42,6.7
+RET,CF,DI,28,7501055374311,Fanta Naranja SA 300ml NR,Refrescos,0.0,6.7
+RET,CF,DI,28,7501073840331,Penafiel Limonada Light 600 ml NR,Refrescos,6.7,6.7
+RET,CF,DI,28,7501073841253,Penafiel Fresada 600 ml NR,Refrescos,13.4,6.7
+RET,CF,DI,28,7501073844537,Penafiel Toronja 600ml NR,Refrescos,20.1,6.7
+RET,CF,DI,28,7501073841178,PENAFIEL TORONJADA LIGHT 600 ML,Refrescos,26.8,6.7
+RET,CF,DI,28,7501198343731,Dr Pepper Original 355ml Lata ,Refrescos,33.5,6.7
+RET,CF,DI,28,7501055374304,Fresca Toronja SA 300ml NR,Refrescos,40.2,6.7
+RET,CF,DI,28,7501073840607,Penafiel Toronjada 600 ml NR,Refrescos,46.9,6.7
+RET,CF,DI,28,7501071120183,Squirt Toronja 600ml NR,Refrescos,53.6,6.7
+RET,CF,DI,28,7501073831933,Penafiel Sangria 600ml NR,Refrescos,60.3,6.7
+RET,CF,DI,29,7501073839304,Penafiel Fresa light 600ml NR,Refrescos,0.0,6.7
+RET,CF,DI,29,7501441610511,Jarritos Toronja 600ml NR,Refrescos,6.7,6.7
+RET,CF,DI,29,7501073842007,PENAFIEL TWIST PEPINO LIMON 600 ML NR,Refrescos,13.4,6.7
+RET,CF,DI,29,7503032676012,Squirt Toronja 600ml NR,Refrescos,20.1,6.65
+RET,CF,DI,29,75005078,Fanta Naranja 500ml RET,Refrescos,26.75,6.6
+RET,CF,DI,29,7501073844124,Extra Poma Manzana 355ml Lata ,Refrescos,33.35,6.6
+RET,CF,DI,29,75009809,Refresco Coca-Cola 500 ml botella plastico No Retornable cola,Refrescos,39.95,6.6
+RET,CF,DI,29,7501073844162,Penafiel Mineral Lata 355ml,Refrescos,46.55,6.6
+RET,CF,DI,29,7501073841345,Penafiel Limonada 355 ml NR,Refrescos,53.15,6.6
+RET,CF,DI,29,7501071122040,Squirt Toronja 355ml Lata ,Refrescos,59.75,6.6
+RET,CF,DI,30,7501073833722,Schweppes Ginger Ale 600 ml NR,Refrescos,0.0,6.6
+RET,CF,DI,30,7501073831148,Agua mineral de manantial Penafiel 355 ml botella No Retornable:natural,Refrescos,6.6,6.6
+RET,CF,DI,30,7503018023120,Barrilitos Ponche tropical 500ml NR,Refrescos,13.2,6.6
+RET,CF,DI,30,75007942,Fresca Toronja 500ml RET,Refrescos,19.8,6.6
+RET,CF,DI,30,7501198350418,Dr Pepper Original 600ml NR,Refrescos,26.4,6.6
+RET,CF,DI,30,7501198354331,DR PEPPER CHERRY LATA 355 ML,Refrescos,33.0,6.6
+RET,CF,DI,30,7503006897016,Red Cola 600ml NR,Refrescos,39.6,6.6
+RET,CF,DI,30,7503032676241,MINERALI 600ML,Refrescos,46.2,6.6
+RET,CF,DI,30,75005061,Sprite Lima limon 500ml Ret,Refrescos,52.8,6.6
+RET,CF,DI,30,7501055305612,Sprite Lima limon 500ml NR,Refrescos,59.4,6.6
+RET,CF,DI,31,7501055343546,Sidral Mundet Manzana 500ml Ret,Refrescos,0.0,6.6
+RET,CF,DI,31,7501055343485,Mundet Manzana 500ml NR,Refrescos,6.6,6.6
+RET,CF,DI,31,7501055328390,Coca Cola SA 400 ml NR,Refrescos,13.2,6.6
+RET,CF,DI,31,7501055321667,CC sin Azucar 500ml RV 24P,Refrescos,19.8,6.6
+RET,CF,DI,31,7501055371204,Sprite Lima limon 500ml Vidrio RET,Refrescos,26.4,6.6
+RET,CF,DI,31,7501055371211,Fresca Toronja 500ml Vidrio RET,Refrescos,33.0,6.6
+RET,CF,DI,31,7501055320622,Coca Cola SA 355 ml lata,Refrescos,39.6,6.6
+RET,CF,DI,31,7501055316946,Refresco Joya 500 ml botella retornable,Refrescos,46.2,6.6
+RET,CF,DI,31,721136010243,Refresco Joya 500 ml botella Retornable,Refrescos,52.8,6.6
+RET,CF,DI,31,7501055305704,Refresco Coca-Cola 500 ml botella Retornable:light,Refrescos,59.4,6.6
+RET,CF,DI,32,7501055311415,Refresco Coca-Cola 450 ml botella No Retornable:cola:light,Refrescos,0.0,6.6
+RET,CF,DI,32,7501055305391,Refresco CocaCola 355 ml lata light,Refrescos,6.6,6.6
+RET,CF,DI,32,792313000418,Zaraza Vargas Original 355ml Lata ,Refrescos,13.2,6.6
+RET,CF,DI,32,7501022013021,Pepsi Black 355 ml LATA,Refrescos,19.8,6.6
+RET,CF,DI,32,7501022014912,Mirinda 600mls RA,Refrescos,26.4,6.6
+RET,CF,DI,32,7501022015377,Manzanita Sol PET 600ml,Refrescos,33.0,6.6
+RET,CF,DI,32,7501055303731,Fresca Toronja 500ml NR,Refrescos,39.6,6.6
+RET,CF,DI,32,7501022015438,Pepsi Kick SG 473 Ml Lata 12 XD,Refrescos,46.2,6.6
+RET,CF,DI,32,7501055303724,Fanta Naranja 500ml NR,Refrescos,52.8,6.6
+RET,CF,DI,32,7501055377442,Joya Manzana 500ml Vidrio RET,Refrescos,59.4,6.6
+RET,CF,DI,33,7501031311620,Refresco Pepsi 500 ml botella No Retornable cola,Refrescos,0.0,6.5
+RET,CF,DI,33,7501055320677,COCA COLA SIN AZUCAR 355ML RETORNABLE,Refrescos,6.5,6.5
+RET,CF,DI,33,7501055339082,Coca cola Chubby Light  355 ml PET NR,Refrescos,13.0,6.5
+RET,CF,DI,33,7501055316939,Refresco Joya 355 ml botella Retornable,Refrescos,19.5,6.5
+RET,CF,DI,33,75013554,Refresco CocaCola 355 ml botella Retornable light,Refrescos,26.0,6.5
+RET,CF,DI,33,7501055346622,Refresco Coca Cola 300ml NR,Refrescos,32.5,6.5
+RET,CF,DI,33,7501055349234,Coca Cola sin azucar 300 ml,Refrescos,39.0,6.5
+RET,CF,DI,33,7501055356256,Coca Cola Sin Azucar Chubby 355ml Pet,Refrescos,45.5,6.5
+RET,CF,DI,33,21136010206,Refresco Joya 355 ml botella Retornable,Refrescos,52.0,6.5
+RET,CF,DI,33,7501055389087,Mundet Light 300ml NR,Refrescos,58.5,6.5
+RET,CF,DI,34,7501055373925,FANTA SIN AZUCAR NARANJA BOTELLA 300 ML PET NR,Refrescos,0.0,6.5
+RET,CF,DI,34,7501055366347,Sprite Lima limon SA 355ml Lata ,Refrescos,6.5,6.5
+RET,CF,DI,34,7501055373741,FRESCA SIN AZUCAR TORONJA BOTELLA 300 ML PET NR,Refrescos,13.0,6.5
+RET,CF,DI,34,7501055373727,SPRITE SINAZUCAR 300MPET12,Refrescos,19.5,6.5
+RET,CF,DI,34,7501055368662,CocaCola Sin Azucar 450ml PET NR,Refrescos,26.0,6.5
+RET,CF,DI,34,7501073825208,Schweppes Tonic 296 ml NR,Refrescos,32.5,6.5
+RET,CF,DI,34,7501055377381,JOYA MANZANA 355 ML RT VID,Refrescos,39.0,6.4
+RET,CF,DI,34,7501073831469,Penafiel Twist Limon 600 ml NR,Refrescos,45.4,6.4
+RET,CF,DI,34,7501073839328,Penafiel Manzana light 600ml NR,Refrescos,51.8,6.4
+RET,CF,DI,34,7501073839854,Penafiel Naranjada 600 ml NR,Refrescos,58.2,6.4
+RET,CF,DI,35,7501073839885,Penafiel Limonada 600 ml NR,Refrescos,0.0,6.4
+RET,CF,DI,35,7501055377404,JOYA DURAZNO 355 ML RT VID 24 ETIQ,Refrescos,6.4,6.4
+RET,CF,DI,35,7501073840355,Penafiel Naranjada Light 600 ml NR,Refrescos,12.8,6.4
+RET,CF,DI,35,7501073840188,Penafiel Twist Naranja 600 ml NR,Refrescos,19.2,6.4
+RET,CF,DI,35,7501071121692,Squirt Pepino limon 600ml NR,Refrescos,25.6,6.4
+RET,CF,DI,35,7501073842670,PENAFIEL MANGADA 600ML NR,Refrescos,32.0,6.4
+RET,CF,DI,35,7501073842274,Penafiel Mineral Coco 600 ml NR,Refrescos,38.4,6.4
+RET,CF,DI,35,7501055380084,FRESCA FUSION 300ML NR,Refrescos,44.8,6.3
+RET,CF,DI,35,7501055381449,Sidral Mundet Manzana light 300ml NR,Refrescos,51.1,6.3
+RET,CF,DI,35,7501441610214,Jarritos Tamarindo 600ml NR,Refrescos,57.4,6.3
+RET,CF,DI,36,21136010374,TOPO CHICO 355ML NR,Refrescos,0.0,6.2
+RET,CF,DI,36,7501022016169,Sting Fresa 400 Ml Pet 12,Refrescos,6.2,6.2
+RET,CF,DI,36,7501055376827,Sidral Mundet Manzana light 355ml NR,Refrescos,12.4,6.2
+RET,CF,DI,36,7501055376810,Fanta Naranja SA 355ml NR,Refrescos,18.6,6.2
+RET,CF,DI,36,7503018023779,Se?orial Sangria 355ml NR,Refrescos,24.8,6.1
+RET,CF,DI,36,7501055374281,Sprite Lima limon 300ml NR,Refrescos,30.9,6.0
+RET,CF,DI,36,7501055311323,SPRITE 250ML,Refrescos,36.9,6.0
+RET,CF,DI,36,7501055343560,Refresco Sidral Mundet 250 ml NR,Refrescos,42.9,6.0
+RET,CF,DI,36,7501441610115,Jarritos Mandarina 600ml NR,Refrescos,48.9,6.0
+RET,CF,DI,36,7501055358984,Coca Cola SA 250ML,Refrescos,54.9,6.0
+RET,CF,DI,37,7501055379910,FRESCA FUSION 235ml NR,Refrescos,0.0,6.0
+RET,CF,DI,37,7501055308163,Fresca 250ml,Refrescos,6.0,6.0
+RET,CF,DI,37,7501198355536,Dr Pepper Original 355ml Lata ,Refrescos,12.0,6.0
+RET,CF,DI,37,7501055328369,Sprite Lima limon 400ml NR,Refrescos,18.0,6.0
+RET,CF,DI,37,7501073844179,PENAFIEL NARANJADA 400ML,Refrescos,24.0,6.0
+RET,CF,DI,37,7501073844186,PENAFIEL LIMONADA 400ML,Refrescos,30.0,6.0
+RET,CF,DI,37,7501022014257,PEPSI KICK 500 ML,Refrescos,36.0,6.0
+RET,CF,DI,37,7501073844193,PENAFIEL PINADA 400ML,Refrescos,42.0,6.0
+RET,CF,DI,37,7501055328321,Fanta Naranja 400ml NR,Refrescos,48.0,6.0
+RET,CF,DI,37,7501055328338,Refresco Fresca NR 400 ml,Refrescos,54.0,6.0
+RET,CF,DI,38,7501055328345,Coca Cola 400ml,Refrescos,0.0,6.0
+RET,CF,DI,38,7501055328420,Joya Manzana 400ml NR,Refrescos,6.0,6.0
+RET,CF,DI,38,7501055328444,Joya Ponche 400ml NR,Refrescos,12.0,6.0
+RET,CF,DI,38,7501055341344,Refresco Coca Cola 355ml NR Pet,Refrescos,18.0,6.0
+RET,CF,DI,38,7501071140815,Squirt SA 12 Oz Pet,Refrescos,24.0,5.8
+RET,CF,DI,38,7501071120664,Squirt Toronja 400ml NR,Refrescos,29.8,5.8
+RET,CF,DI,38,7501022013885,Seven up Lima limon 400ml NR,Refrescos,35.6,5.8
+RET,CF,DI,38,7501031304295,Vita Fresa 400ml NR,Refrescos,41.4,5.8
+RET,CF,DI,38,7501022013861,PEPSI BLACK 355 ML PET,Refrescos,47.2,5.8
+RET,CF,DI,38,7501031302741,Refresco de Cola Pepsi 400 ml bote No retornable,Refrescos,53.0,5.8
+RET,CF,DI,39,7501022016008,Mirinda RA 400ml PET 12,Refrescos,0.0,5.8
+RET,CF,DI,39,7501022015513,Manzanita Sol Manzana 400ml NR,Refrescos,5.8,5.8
+RET,CF,DI,39,7501055361557,CocaCola Sin Azucar lata 355 ML NR Sleek Can,Refrescos,11.6,5.8
+RET,CF,DI,39,7501055365395,CocaCola Light lata 355 ML NR Sleek Can,Refrescos,17.4,5.8
+RET,CF,DI,39,744886318827,Jarritos Tutti Frutti 600ml NR,Refrescos,23.2,5.7
+RET,CF,DI,39,30385246007,Agua mineral carbonatada Lourdes 600 ml botella NR,Refrescos,28.9,5.7
+RET,CF,DI,39,7501073844056,SCHWEPPES TONICO LATA 355ML,Refrescos,34.6,5.7
+RET,CF,DI,39,7501198355574,Dr Pepper Cream soda 355ml Lata ,Refrescos,40.3,5.7
+RET,CF,DI,39,7501071140754,SQUIRT SIN AZUCAR 400ml,Refrescos,46.0,5.7
+RET,CF,DI,39,7501055367498,CocaCola con Cafe 235ml,Refrescos,51.7,5.7
+RET,CF,DI,40,606110023849,Red Cola 400ml,Refrescos,0.0,5.7
+RET,CF,DI,40,7501055314270,Refresco Joya Manzana NR 250ml,Refrescos,5.7,5.6
+RET,CF,DI,40,7501055346745,Fanta Naranja 300ml RET,Refrescos,11.3,5.6
+RET,CF,DI,40,30385371020,Agua mineral carbonatada Lourdes 355 ml botella NR,Refrescos,16.9,5.5
+RET,CF,DI,40,7501055307678,Refresco Fanta 250 ml botella No Retornable naranja,Refrescos,22.4,5.5
+RET,CF,DI,40,7503018023786,Chaparritas Mandarina 255ml Vidrio NR,Refrescos,27.9,5.5
+RET,CF,DI,40,7503018023793,Chaparritas Uva 255ml Vidrio NR,Refrescos,33.4,5.5
+RET,CF,DI,40,7501055308156,Refresco Fanta 250 ml botella No Retornablefresa,Refrescos,38.9,5.5
+RET,CF,DI,40,7501055354689,CocaCola 235ml VNR light,Refrescos,44.4,5.5
+RET,CF,DI,40,7501055354696,Coca Cola SA 235 ml VNR,Refrescos,49.9,5.5
+RET,CF,DI,41,7501055349609,Coca Cola 235ml PET NR,Refrescos,0.0,5.2
