@@ -20,7 +20,7 @@ from image_manager import get_product_image_pil
 # ── Configuración de página ──────────────────────────────────────────────────
 st.set_page_config(
     page_title="Planograma OXXO",
-    page_icon="🏪",
+    page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -166,17 +166,17 @@ df_raw = cargar_datos(DATA_FILE)
 # ── Header ───────────────────────────────────────────────────────────────────
 st.markdown(f"""
 <div class="main-title">
-  <h1>🏪 Dashboard Planograma OXXO — Mueble CF</h1>
+  <h1> Dashboard Planograma OXXO
   <p>Análisis interactivo · Algoritmo Best-Fit + 2-opt · {len(df_raw):,} registros · {df_raw["SEGMENTO_ID"].nunique()} segmentos</p>
 </div>
 """, unsafe_allow_html=True)
 
 # ── Tabs ─────────────────────────────────────────────────────────────────────
 tab1, tab2, tab3, tab4 = st.tabs([
-    "📊  Resultados Generales",
-    "🔍  Explorador de Datos",
-    "🎛️  Simulador de Escenarios",
-    "🗂️  Glosario de Productos",
+    "Resultados Generales",
+    "Explorador de Datos",
+    "Simulador de Escenarios",
+    "Glosario de Productos",
 ])
 
 # ╔══════════════════════════════════════════════════════════════════════════╗
@@ -320,7 +320,7 @@ with tab2:
 
     # ── Sidebar filtros ──
     with st.sidebar:
-        st.markdown(f"<h2 style='color:{AMARILLO};margin-top:0'>🔧 Filtros</h2>", unsafe_allow_html=True)
+        st.markdown(f"<h2 style='color:{AMARILLO};margin-top:0'> Filtros</h2>", unsafe_allow_html=True)
 
         seg_opts = sorted(df_raw["SEGMENTO_ID"].dropna().unique())
         seg_sel  = st.multiselect("Segmento", seg_opts, default=seg_opts[:2],
@@ -356,7 +356,7 @@ with tab2:
 
     n_fil = len(df_fil)
     st.markdown(
-        f'<div class="info-box">🔎 Mostrando <b>{n_fil:,}</b> registros con los filtros actuales '
+        f'<div class="info-box"> Mostrando <b>{n_fil:,}</b> registros con los filtros actuales '
         f'({n_fil/len(df_raw)*100:.1f}% del total)</div>',
         unsafe_allow_html=True,
     )
@@ -576,7 +576,7 @@ with tab2:
 
         csv_bytes = df_fil[cols_show].to_csv(index=False).encode()
         st.download_button(
-            "⬇️ Descargar filtrado como CSV", csv_bytes,
+            "Descargar filtrado como CSV", csv_bytes,
             file_name="planograma_filtrado.csv", mime="text/csv",
         )
 
@@ -656,13 +656,13 @@ with tab3:
             "Segmento":          seg,
             "Charolas (actual)": charolas_base,
             "Charolas (sim.)":   charolas_sim,
-            "Δ Charolas":        charolas_sim - charolas_base,
+            "Dif_Charolas":      charolas_sim - charolas_base,
             "Ocup. actual (%)":  round(ocup_base, 1),
             "Ocup. sim. (%)":    round(ocup_sim, 1),
-            "Δ Ocup. (pp)":      round(ocup_sim - ocup_base, 1),
+            "Dif_Ocup (pp)":     round(ocup_sim - ocup_base, 1),
             "Score actual":      round(score_base, 0),
             "Score sim.":        round(score_sim, 0),
-            "Δ Score":           round(score_sim - score_base, 0),
+            "Dif_Score":         round(score_sim - score_base, 0),
         })
 
     if not resultados:
@@ -683,12 +683,12 @@ with tab3:
 
         styled = (
             df_sim.style
-            .map(color_delta, subset=["Δ Charolas", "Δ Ocup. (pp)", "Δ Score"])
+            .map(color_delta, subset=["Dif_Charolas", "Dif_Ocup (pp)", "Dif_Score"])
             .format({
                 "Ocup. actual (%)": "{:.1f}%",
                 "Ocup. sim. (%)":   "{:.1f}%",
-                "Δ Ocup. (pp)":     "{:+.1f}",
-                "Δ Score":          "{:+.0f}",
+                "Dif_Ocup (pp)":    "{:+.1f}",
+                "Dif_Score":        "{:+.0f}",
             })
         )
         st.dataframe(styled, use_container_width=True, height=350)
@@ -750,9 +750,9 @@ with tab3:
         st.plotly_chart(fig_score, use_container_width=True)
 
         # ── Resumen ejecutivo ──
-        total_d_charolas = df_sim["Δ Charolas"].sum()
-        total_d_ocup     = df_sim["Δ Ocup. (pp)"].mean()
-        total_d_score    = df_sim["Δ Score"].sum()
+        total_d_charolas = df_sim["Dif_Charolas"].sum()
+        total_d_ocup     = df_sim["Dif_Ocup (pp)"].mean()
+        total_d_score    = df_sim["Dif_Score"].sum()
 
         st.markdown('<div class="section-title">Resumen del impacto simulado</div>', unsafe_allow_html=True)
         m1, m2, m3 = st.columns(3)
@@ -763,7 +763,7 @@ with tab3:
             st.markdown(f"""
             <div class="kpi-card" style="border-left-color:{color_card}">
               <div class="kpi-value" style="color:{color_card}">{signo(total_d_charolas)}</div>
-              <div class="kpi-label">Δ Charolas totales</div>
+              <div class="kpi-label">Dif. Charolas totales</div>
               <div class="kpi-delta">vs. configuración actual</div>
             </div>
             """, unsafe_allow_html=True)
@@ -772,7 +772,7 @@ with tab3:
             st.markdown(f"""
             <div class="kpi-card" style="border-left-color:{color_card}">
               <div class="kpi-value" style="color:{color_card}">{signo(total_d_ocup)} pp</div>
-              <div class="kpi-label">Δ Ocupación promedio</div>
+              <div class="kpi-label">Dif. Ocupación promedio</div>
               <div class="kpi-delta">puntos porcentuales</div>
             </div>
             """, unsafe_allow_html=True)
@@ -781,7 +781,7 @@ with tab3:
             st.markdown(f"""
             <div class="kpi-card" style="border-left-color:{color_card}">
               <div class="kpi-value" style="color:{color_card}">{signo(total_d_score)}</div>
-              <div class="kpi-label">Δ Score objetivo total</div>
+              <div class="kpi-label">Dif. Score objetivo total</div>
               <div class="kpi-delta">suma de todos los segmentos</div>
             </div>
             """, unsafe_allow_html=True)
